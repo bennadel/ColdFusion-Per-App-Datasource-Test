@@ -46,3 +46,19 @@ Refreshing the page removes the GraphQL error but then shows the datasource erro
 <img src="./static/acf-2023-datasource-error.png" />
 
 Neither of these errors is expected.
+
+----
+
+## Update On Adobe ColdFusion 2023
+
+[Dan G. Switzer, II](https://blog.pengoworks.com/) had a comment on Twitter that the GraphQL error that I'm seeing might be a clue to the cause. He posited that once GraphQL was breaking, then the datasource wasn't going to work. So, I tried:
+
+* Going into the 2023 CFAadmin.
+* Installing the GraphQL package.
+* Restarting the 2023 container.
+
+And, kablamo!
+
+<img src="./static/acf-2023-startup.png" />
+
+It's alive!!!
